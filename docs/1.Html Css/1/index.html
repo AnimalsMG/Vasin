@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>1.1 Опрос</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Опрос</h1>
+</header>
+    <input type="text" 
+    id="UserName" 
+    name="username"
+    title="Введите имя используя кириллицу"
+    placeholder="Введите имя">
+    
+    <br>
+
+    <input type="text" 
+    id="UserPhone" 
+    name="userphone", 
+    title="Введите номер телефона"
+    placeholder="+7(XXX)XXX-XX-XX">
+
+    <br>
+
+    <input type="email" 
+    id="UserEmail" 
+    name="useremail", 
+    title="Введите электронную почту"
+    placeholder="example@mail.com">
+
+    <br>
+
+    <label for="city">Выберите город:</label>
+    <select id="UserCity" name="usercity">
+        <option value="">-- Выберите город --</option>
+        <option value="moscow">Москва</option>
+        <option value="spb">Санкт-Петербург</option>
+        <option value="ekb">Екатеринбург</option>
+        <option value="kazan">Казань</option>
+    </select>
+
+    <br>
+
+    <p>Выберите пол:</p>
+    <label>
+        <input type="radio" name="usergender" value="male">
+        Мужской
+    </label>
+    <label>
+        <input type="radio" name="usergender" value="female">
+        Женский
+    </label>
+    <label>
+        <input type="radio" name="usergender" value="other">
+        Другой
+    </label>
+
+    <br>
+
+    <label>
+        <input type="checkbox" name="newsletter" value="yes" checked>
+        Подписаться на рассылку
+    </label><br>
+    <label>
+        <input type="checkbox" name="terms" value="accepted" required>
+        Я принимаю условия соглашения
+    </label>
+
+    <br>
+
+    <textarea id="message" name="message" placeholder="Оставьте свой отзыв"></textarea>
+
+    <br>
+
+    <button name="submitbtn" id="SubmitBtn" type="submit">Отправить форму</button>
+</main>
+<footer>
+
+</footer>
+</body>
+</html>
